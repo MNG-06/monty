@@ -85,6 +85,7 @@ stack_t *add_dnodeint_end(stack_t **head, const int n);
 int handle_input(int argc, char **argv, FILE **fd);
 char **handle_line(char *line);
 void _math(stack_t **stack, char op);
+static void _check_stack_short(stack_t **stack, unsigned int line_nb, const char *operation, int error_code);
 
 /* DEBUG */
 void debug(char **args, int line_nb);
